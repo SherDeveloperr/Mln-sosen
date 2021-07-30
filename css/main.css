@@ -1,0 +1,192 @@
+@import 'section.css';
+@import 'slider.css';
+
+@import 'header.css';
+@import 'banner.css';
+@import 'info-block.css';
+@import 'cards.css';
+@import 'info-card.css';
+@import 'form.css';
+@import 'footer.css';
+@import 'how-it-works.css';
+@import 'sponsor.css';
+@import 'own-territory.css';
+@import 'votes.css';
+@import 'news.css';
+@import 'gallery.css';
+
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	/*scroll-behavior: smooth;*/
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+button:focus, 
+a:focus, 
+input:focus, 
+textarea:focus, 
+select:focus {
+	outline: none;
+}
+
+.body {
+	position: relative;
+	height: 100%;
+	background-image: url('../img/bg-clear.png');
+	background-size: cover;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.main-dark-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: url('../img/dark-bg.png');
+	background-position: top center;
+	background-size: cover;
+}
+
+.bg-sosna {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: auto;
+	right: auto;
+	text-align: center;
+	top: 0;
+	z-index: -1;
+	background: url(../img/bg2.png) no-repeat center;
+}
+
+.wrapper {
+	max-width: calc(1332px);
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.main-btn {
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.swal2-confirm {
+	box-shadow: none!important;
+}
+
+.show-sm {
+	display: none;
+}
+
+@media(min-width: 1500px) {
+
+}
+
+@media(max-width: 1200px) {
+
+	.wrapper {
+		max-width: 1100px;
+	}
+
+	.body {
+		background: none;
+		overflow: unset;
+	}
+
+	.body-top {
+		position: relative;
+		height: 100%;
+		background-image: url('../img/bg-clear-sm.png');
+		background-size: cover;
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+		z-index: 1;
+		overflow: hidden;
+		padding-bottom: 150px;
+	}
+
+	.body-bottom {
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 9;
+		transform: translateY(-180px);
+	}
+
+	.main-dark-content {
+		padding-top: 750px;
+	}
+
+}
+
+@media(max-width: 992px) {
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {}
+
+@media(max-width: 576px) {
+
+	.main-dark-content {
+	    padding-top: 850px;
+	}
+	
+	.wrapper {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.show-sm {
+		display: block;
+	}
+
+	.bg-sosna {
+		height: 90%;
+	}
+
+}
